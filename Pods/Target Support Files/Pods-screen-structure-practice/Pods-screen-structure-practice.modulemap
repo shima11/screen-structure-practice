@@ -1,0 +1,6 @@
+framework module Pods_screen_structure_practice {
+  umbrella header "Pods-screen-structure-practice-umbrella.h"
+
+  export *
+  module * { export * }
+}
