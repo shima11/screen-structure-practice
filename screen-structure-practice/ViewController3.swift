@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ViewController3.swift
 //  screen-structure-practice
 //
 //  Created by jinsei_shima on 2019/09/12.
@@ -7,18 +7,19 @@
 //
 
 import UIKit
-import EasyPeasy
 
-class ViewController1: UIViewController {
+class ViewController3: UIViewController {
 
-    
   override func viewDidLoad() {
     super.viewDidLoad()
 
-    title = "hoge"
+    title = "poko"
+
+    view.backgroundColor = .white
     
+//    hidesBottomBarWhenPushed = true
+//    tabBarController?.tabBar.isHidden = true
+
   }
 
-
 }
-

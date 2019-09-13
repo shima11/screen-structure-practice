@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CFB084585F7451CCC737CB42 /* Pods_screen_structure_practice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 314C5E6311431F639BF7FE73 /* Pods_screen_structure_practice.framework */; };
+		D4682B4C232A17830047C0D7 /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4682B4B232A17830047C0D7 /* ViewController3.swift */; };
 		D4F7C93A232A128100D82EA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F7C939232A128100D82EA7 /* AppDelegate.swift */; };
 		D4F7C93C232A128100D82EA7 /* ViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F7C93B232A128100D82EA7 /* ViewController1.swift */; };
 		D4F7C93F232A128100D82EA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4F7C93D232A128100D82EA7 /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		314C5E6311431F639BF7FE73 /* Pods_screen_structure_practice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_screen_structure_practice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4682B4B232A17830047C0D7 /* ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
 		D4F7C936232A128100D82EA7 /* screen-structure-practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "screen-structure-practice.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4F7C939232A128100D82EA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D4F7C93B232A128100D82EA7 /* ViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController1.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				D4F7C94D232A149100D82EA7 /* CustomNavigationController.swift */,
 				D4F7C93B232A128100D82EA7 /* ViewController1.swift */,
 				D4F7C94B232A13B900D82EA7 /* ViewController2.swift */,
+				D4682B4B232A17830047C0D7 /* ViewController3.swift */,
 				D4F7C93D232A128100D82EA7 /* Main.storyboard */,
 				D4F7C940232A128300D82EA7 /* Assets.xcassets */,
 				D4F7C942232A128300D82EA7 /* LaunchScreen.storyboard */,
@@ -214,6 +217,7 @@
 			files = (
 				D4F7C94E232A149100D82EA7 /* CustomNavigationController.swift in Sources */,
 				D4F7C93C232A128100D82EA7 /* ViewController1.swift in Sources */,
+				D4682B4C232A17830047C0D7 /* ViewController3.swift in Sources */,
 				D4F7C950232A149D00D82EA7 /* CustomTabBarController.swift in Sources */,
 				D4F7C93A232A128100D82EA7 /* AppDelegate.swift in Sources */,
 				D4F7C94C232A13B900D82EA7 /* ViewController2.swift in Sources */,
