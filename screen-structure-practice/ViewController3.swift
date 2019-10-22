@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import EasyPeasy
 
 class ViewController3: UIViewController {
 
@@ -16,9 +17,30 @@ class ViewController3: UIViewController {
     title = "poko"
 
     view.backgroundColor = .white
-    
+
+
+    let button = UIButton(type: .system)
+    button.addTarget(self, action: #selector(tap), for: .touchUpInside)
+    button.setTitle("hoge", for: .normal)
+
+    view.addSubview(button)
+
+    button.easy.layout(Center())
+
 //    hidesBottomBarWhenPushed = true
 //    tabBarController?.tabBar.isHidden = true
+
+    navigationController?.navigationBar.isTranslucent = false
+    tabBarController?.tabBar.isTranslucent = false
+  }
+
+  @objc func tap() {
+
+    if let navigationControll = navigationController {
+      navigationController?.popViewController(animated: true)
+    } else {
+      dismiss(animated: true, completion: nil)
+    }
 
   }
 

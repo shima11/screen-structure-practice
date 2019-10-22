@@ -19,18 +19,26 @@ class ViewController2: UIViewController {
     let contentView = UIView()
     contentView.backgroundColor = .orange
 
-    let button = UIButton()
+    let button = UIButton(type: .system)
     button.addTarget(self, action: #selector(tap), for: .touchUpInside)
     button.setTitle("hoge", for: .normal)
-    button.setTitleColor(.darkText, for: .normal)
+
+
+    let label = UILabel()
+    label.text = "label"
+    label.textColor = .darkText
 
 
     view.addSubview(contentView)
     view.addSubview(button)
-    
+    view.addSubview(label)
+
     contentView.easy.layout(Edges())
     button.easy.layout(Center())
-    
+    label.easy.layout(
+      Top().to(view.safeAreaLayoutGuide, .top),
+      CenterX()
+    )
     
     
 //    hidesBottomBarWhenPushed = true
@@ -45,7 +53,6 @@ class ViewController2: UIViewController {
     //多分NavigationBarのどこまでViewを伸ばすかというプロパティ
     edgesForExtendedLayout = .bottom
     
-
   }
 
   @objc func tap() {
@@ -53,7 +60,6 @@ class ViewController2: UIViewController {
     let controller = ViewController3()
     controller.hidesBottomBarWhenPushed = true
     navigationController?.pushViewController(controller, animated: true)
-
   }
 
 }

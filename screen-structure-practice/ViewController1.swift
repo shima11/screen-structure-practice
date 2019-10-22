@@ -11,14 +11,31 @@ import EasyPeasy
 
 class ViewController1: UIViewController {
 
-    
   override func viewDidLoad() {
     super.viewDidLoad()
 
     title = "hoge"
-    
+
+    let button = UIButton(type: .system)
+    button.addTarget(self, action: #selector(tap), for: .touchUpInside)
+    button.setTitle("hoge", for: .normal)
+
+    view.addSubview(button)
+
+    button.easy.layout(
+      Center()
+    )
   }
 
+  @objc func tap() {
+
+    let controller = ViewController3()
+//    controller.hidesBottomBarWhenPushed = true
+    controller.modalPresentationStyle = .overFullScreen
+    present(controller, animated: true, completion: nil)
+
+  }
 
 }
+
 
